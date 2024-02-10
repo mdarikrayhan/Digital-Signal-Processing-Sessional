@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+x=input('Input Sequence');
+Rxx=xcorr(x);
+disp('Auto correlation values :');
+disp(Rxx);
+t=((-length(x)/2-1):length(x)-1);
+stem(t,Rxx);
+xlabel('Time');
+ylabel('Amplitude');
+title('Autocorrelation');
