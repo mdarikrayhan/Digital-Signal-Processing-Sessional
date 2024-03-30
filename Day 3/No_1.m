@@ -1,7 +1,7 @@
 clc; 
 clear all; 
 close all;
-n = -5:5; 
+n = -5:5;
 x = ones(1,11); 
 [r,lag] = xcorr(x, x);
 disp ('Auto correlation sequence r(n) is ');
