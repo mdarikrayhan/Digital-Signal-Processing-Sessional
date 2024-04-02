@@ -1,8 +1,8 @@
 clc;
 clear all;
 close all;
-x=input('First Input Sequence:');
-y=input('Second Input Sequence:');
+x=input('First Input Sequence:');[1 2 3 4]
+y=input('Second Input Sequence:');[1 3 3 4]
 %% Autocorrelation of x
 Rxx=xcorr(x);
 disp('Auto Correlation Values of x :');
@@ -13,12 +13,12 @@ Ryy=xcorr(y);
 disp('Auto Correlation Values of y :');
 disp(Ryy);
 
-%% Autocorrelation of xy
+%% Crosscorrelation of xy
 Rxy=xcorr(x,y);
 disp('Auto Correlation Values of xy :');
 disp(Rxy);
 
-%% Autocorrelation of yx
+%% Crosscorrelation of yx
 Ryx=xcorr(y,x);
 disp('Auto Correlation Values of yx :');
 disp(Ryx);

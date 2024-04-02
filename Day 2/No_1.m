@@ -8,7 +8,6 @@ T=1/min(min(f1,f2),f3);
 
 t=0:0.001*T:2*T;
 
-
 x=(5*sin(2*pi*f1*t))+(10*cos(2*pi*f2*t))+(15*cos(2*pi*f3*t));%Original Signal
 subplot(2,2,1);
 plot(t,x,'g');

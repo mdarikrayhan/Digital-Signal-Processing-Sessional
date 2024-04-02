@@ -1,7 +1,7 @@
 clc;
 close all;
 tfinal = 0.05;
-t= 0:0.00005: tfinal;%runs for .00005/0.05 = 1000 times
+t= 0:0.00005: tfinal; %runs for .00005/0.05 = 1000 times
 fd= input('Enter the analog frequency of the sine wave : ');
 xt = sin(2*pi*fd*t);%original signal
 

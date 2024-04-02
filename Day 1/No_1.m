@@ -3,11 +3,12 @@ clear all;                          %clear workspace
 close all;                          %close all fiures windows
 
 %to generate unit impulse signal
-t = -2:1:2;                         %Define time vector
+t = -2:1:2;%-2 -1 0 1 2                        %Define time vector
 y = [zeros(1,2),ones(1),zeros(1,2)];%Define Amplitude values
 subplot(2,2,1);
 stem(t,y);
-xlabel('time'); ylabel('amplitude'); 
+xlabel('time'); 
+ylabel('amplitude'); 
 title('Unit Impulse signal'); 
 
 % to generate unit step
